@@ -43,11 +43,11 @@ body{
   border: none;
   border-bottom: 1px solid #F98F8F;
 }
-#main-container {
+#news-articles {
 	list-style: none;
 }
 
-#main-container li {
+#news-articles li {
 	display: inline;
 }
 

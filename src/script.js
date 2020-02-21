@@ -25,12 +25,12 @@ console.log(data);
 
 
 
- document.getElementById("main-container").innerHTML =  `
+ document.getElementById("news-articles").innerHTML =  `
 
 ${data.articles.map(function(x) {
 
      return `
-           <li>
+           <li class="article">
              <div class="card">
               <img src="${x.urlToImage}" class="card-img-top" alt="..." class="article-img"><br/>
               <h2 class="article-title">${x.title}</h2>
@@ -46,7 +46,7 @@ ${data.articles.map(function(x) {
 
 
 if (data.articles.length === 0) {
-   document.getElementById('msg').textContent = "result not found"
+   document.getElementById('msg').textContent = "No article was found based on the search.";
  }
 
   input.addEventListener('input', evt => {
