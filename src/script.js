@@ -32,7 +32,7 @@ ${data.articles.map(function(x) {
      return `
            <li class="article">
              <div class="card">
-              <img src="${x.urlToImage}" class="card-img-top" alt="..." class="article-img"><br/>
+              <img src="${x.urlToImage}" alt="..." class="article-img"><br/>
               <h2 class="article-title">${x.title}</h2>
               <p class="article-description">${x.description}</p>
               <span class="article-author">${x.author}</span>
