@@ -9,7 +9,7 @@ body{
 	position: fixed;
 	width: 100%;
 	height: 100%;
-	background: #F98F8F url('./30.gif') no-repeat center;
+	background: #F98F8F url('../30.gif') no-repeat center;
 	z-index: 99;
 }
 
