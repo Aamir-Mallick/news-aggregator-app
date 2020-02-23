@@ -1,5 +1,5 @@
 "use strict";
-
+import '../styles/index.css';
 
 
 let input = document.getElementById('search');
