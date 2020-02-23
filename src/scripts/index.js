@@ -46,7 +46,7 @@ ${data.articles.map(function(x) {
 
 
 if (data.articles.length === 0) {
-   document.getElementById('msg').textContent = "No article was found based on the search.";
+   document.getElementsByClassName("not-found")[0].textContent = "No article was found based on the search...";
  }
 
   input.addEventListener('input', evt => {
@@ -56,7 +56,7 @@ if (data.articles.length === 0) {
   if (value == '') {
       
    
-      document.getElementById('msg').textContent = ""
+      document.getElementsByClassName("not-found")[0].textContent = ""
 
       fetchNewsApi("apple");
       document.getElementById('loading').style.display = "none";
