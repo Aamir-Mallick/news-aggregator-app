@@ -1,5 +1,5 @@
 "use strict";
-import '../styles/index.css';
+
 
 
 let input = document.getElementById('search');
@@ -18,7 +18,7 @@ async function fetchNewsApi(fill) {
 
 document.getElementById('loading').style.display = "";
 
-let url = await `http://newsapi.org/v2/everything?q=${fill}&from=2020-02-15&to=2020-02-15&sortBy=popularity&apiKey=ee6b965b04b94b2d8376bfae914af2be`;
+let url = await `http://newsapi.org/v2/top-headlines?q=${fill}&from=2020-02-15&to=2020-02-15&sortBy=popularity&apiKey=ee6b965b04b94b2d8376bfae914af2be`;
 const response = await fetch(url);
 const data = await response.json();
 console.log(data);
