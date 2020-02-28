@@ -35,7 +35,7 @@ ${data.articles.map(function(x) {
               <img src="${x.urlToImage}" alt="..." class="article-img"><br/>
               <h2 class="article-title">${x.title}</h2>
               <p class="article-description">${x.description}</p>
-              <span class="article-author">- ${x.author}</span>
+              <span class="article-author"> ${x.author}</span>
               <a class="article-link" href="${x.url}">Go for full article</a>
             </div>    
            </li>
