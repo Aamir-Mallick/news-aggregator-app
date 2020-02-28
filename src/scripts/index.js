@@ -46,7 +46,7 @@ ${data.articles.map(function(x) {
 
 
 if (data.articles.length === 0) {
-   document.getElementsByClassName("not-found")[0].textContent = "No article was found based on the search...";
+   document.getElementsByClassName("not-found")[0].textContent = "No article was found based on the search.";
  }
 
   input.addEventListener('input', evt => {
